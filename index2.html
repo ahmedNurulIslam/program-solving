@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Laptop:
+    <input type="number" value="" id="laptop"> <br> <br>
+    Mobile:
+    <input type="number" value="" id="mobile"> <br> <br>
+    TV:
+    <input type="number" value="" id="tv"> <br> <br>
+    <input type="button" value="plus" onclick="return myfun()"> <br> <br>
+    Result = <br>
+    <span id="result"></span>
+
+    <script>
+        function myfun(){
+            var a = parseInt(document.getElementById("laptop").value);
+            var b = parseInt(document.getElementById("mobile").value);
+            var c = parseInt(document.getElementById("tv").value) ;
+            document.getElementById("result").innerHTML=a+b+c;
+        }
+    </script>
+</body>
+</html>

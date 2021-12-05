@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+  // start longest name
+ var strings2 = ["Ahmed"," Rahat", "Rakib", "Anwar", "Adil","Abdul gaffar"];
+
+  function longestString(arr){
+      var result = " ";
+      for (var i=0; i < arr.length; i++) {
+          var currentItem = arr[i];
+          if (currentItem.length > result.length){
+              result = arr[i];
+
+          }
+      }
+      return result;
+
+  }
+
+  document.write (longestString(strings2));
+ // console.log(longestString(strings2)); 
+
+
+  // end longest name 
+
+   
+
+    
+
+    </script>
+</body>
+</html>

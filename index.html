@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div>
+        Hotel rent
+    </div>
+    
+    
+    <script>
+ 
+        function roomRent(day){
+            var cost=0;
+
+            if(day<=10){
+                cost=day*100;
+            } 
+            else if(day<=20){
+              var fristCost=10*100;
+              var remaing=day-10;
+              var secondCost=remaing*80;
+              cost= fristCost+secondCost;
+            }
+            else{
+                var fristCost=10*100;
+                var secondCost=10*80;
+                var remaing=day-20;
+                var thridCost= remaing*50;
+                cost = fristCost+secondCost+thridCost;
+            }
+
+            return cost;
+        }
+
+        var totalCost= roomRent(19);
+        document.write(totalCost);
+    </script>
+
+    
+</body>
+</html>
